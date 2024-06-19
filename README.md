@@ -20,7 +20,7 @@ The original design of this portfolio template is credited to [Bucky Maler](http
 
 ## Usage
 
-To view the portfolio, simply navigate to [your GitHub Pages link](https://bubblegumpop123.github.io).
+To view the portfolio, simply navigate to [This Link](https://bubblegumpop123.github.io).
 
 ### How to Use
 
