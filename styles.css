@@ -22,6 +22,13 @@ header {
     justify-content: space-between; /* Space between name and image */
 }
 
+.profile-picture {
+    width: 80px; /* Adjust picture width */
+    height: 80px; /* Adjust picture height */
+    border-radius: 50%; /* Make picture circular */
+    margin-right: 20px; /* Add margin to separate from nav links */
+}
+
 header .header-content h1 {
     margin: 0;
     font-size: 24px;
