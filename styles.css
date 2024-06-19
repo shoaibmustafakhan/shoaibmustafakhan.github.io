@@ -3,27 +3,23 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #333;
-    background-color: #f4f4f4;
+    color: #fff;
+    background-color: #232323;
     overflow-x: hidden;
 }
 
 header {
     background: linear-gradient(to right, #0066cc, #0099cc);
     color: #fff;
-    padding: 10px 0;
+    padding: -10px 0;
     position: fixed;
-    top: 0;
+    top: -10;
     width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 
 header .header-content {
     display: flex;
@@ -32,17 +28,12 @@ header .header-content {
 
 header .header-content h1 {
     margin: 0;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
-    margin-left: 20px; /* Adjust margin for spacing */
-}
-
-header .header-content img { /* Style for the image */
-    width: 80px; /* Adjust the size as needed */
-    height: 80px; /* Adjust the size as needed */
-    border-radius: 50%;
     margin-left: 100px; /* Adjust margin for spacing */
 }
+
+
 
 header .nav-links {
     display: flex;
@@ -53,7 +44,7 @@ header .nav-links {
 header .nav-links a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     transition: color 0.3s ease;
 }
 
@@ -61,22 +52,38 @@ header .nav-links a:hover {
     color: #77d5d4;
 }
 
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header .header-content img { /* Style for the image */
+    width: 200px; /* Adjust the size as needed */
+    height: 200px; /* Adjust the size as needed */
+    border-radius: 50%;
+    margin-left: 300px; /* Adjust margin for spacing */
+}
+
 .container {
     width: 80%;
     margin: auto;
-    padding-top: 120px; /* Adjust for fixed header */
+    padding-top: 10px; /* Adjust for fixed header */
 }
 
 h2 {
-    color: #333;
+    color: #fff;
     text-align: center;
     margin: 20px 0;
+    padding-top: 200px; /* Adjust for fixed header */
     font-size: 32px;
 }
 
 .job, .education, .project {
-    background: #fff;
+    background: #121212;
     padding: 20px;
+    padding-top: 20px; /* Adjust for fixed header */
     margin: 20px 0;
     border-left: #77d5d4 5px solid;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
