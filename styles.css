@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77d5d4 3px solid;
+}
+
+header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 24px;
+}
+
+header p {
+    text-align: center;
+    font-size: 16px;
+}
+
+header .social-links {
+    text-align: center;
+    margin: 10px 0;
+}
+
+header .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header .social-links a:hover {
+    color: #77d5d4;
+}
+
+main {
+    padding: 20px 0;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.job, .education, .project {
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: #77d5d4 5px solid;
+}
+
+ul.skills {
+    list-style: none;
+    padding: 0;
+}
+
+ul.skills li {
+    background: #77d5d4;
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Back to top button */
+.back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    font-size: 20px;
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.back-to-top.visible {
+    display: block;
+    opacity: 0.7;
+}
+
+.back-to-top:hover {
+    opacity: 1;
+}
+
+/* Active navigation link */
+.social-links a.active {
+    color: #77d5d4;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header h1, header p, header .social-links {
+        font-size: 18px;
+    }
+
+    ul.skills li {
+        font-size: 14px;
+    }
+}
