@@ -1310,7 +1310,7 @@
       
         .about--banner h2 {
 
-          margin-top: 10px; /* Adjust the margin-top for better alignment */
+          margin-top: -20px; /* Adjust the margin-top for better alignment */
           font-size: 24px; /* Decrease the font size for smaller screens */
         }
       
