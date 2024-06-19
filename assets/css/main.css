@@ -1263,39 +1263,37 @@
       
     
     @media (max-width: 767px) {
-      .about--banner {
-        height: 305px;
-      }
-    
-      .about--banner::before {
-        top: 0;
-        left: 125px;
-      }
-    
-      .about--banner::after {
-        top: 35px;
-        left: 260px;
-      }
-    
-      .about--banner h2 {
-        margin-top: 10px;
-        font-size: 44px;
-      }
-    
-      .about--banner h2::before {
-        top: 28px;
-        left: 168px;
-      }
-    
-      .about--banner h2::after {
-        top: 163px;
-        left: 163px;
-      }
-    
-      .about--banner img {
-        width: 315px;
-      }
-    }
+        .about--banner {
+            height: auto;
+            padding: 20px 0; /* Add some padding to adjust the spacing */
+          }
+        
+          .about--banner::before,
+          .about--banner::after {
+            left: auto; /* Remove fixed positioning */
+          }
+        
+          .about--banner h2 {
+  
+            margin-top: -200px; /* Adjust the margin-top for better alignment */
+            font-size: 24px; /* Decrease the font size for smaller screens */
+            text-align: center;
+          }
+        
+          .about--banner h2::before,
+          .about--banner h2::after {
+            display: none; /* Hide these elements to avoid overlapping */
+          }
+        
+          .about--banner img {
+            display: none; /* Hide the image to free up space */
+          }
+        
+          .about--options {
+            display: none; /* Ensure the options are visible */
+            text-align: center; /* Center the text */
+          }
+        }
     
     @media (max-width: 600px) {
         .about--banner {
