@@ -17,23 +17,29 @@ header {
     width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* Added to align name and image */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space between name and image */
 }
 
 header .header-content h1 {
     margin: 0;
     font-size: 24px;
     font-weight: bold;
+    margin-left: 20px; /* Added margin for spacing */
+}
+
+header .header-content img { /* Added style for the image */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px; /* Added margin for spacing */
 }
 
 header .nav-links {
     display: flex;
     gap: 20px;
+    margin-right: 20px; /* Added margin for spacing */
 }
 
 header .nav-links a {
