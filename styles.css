@@ -41,7 +41,7 @@ header .header-content img { /* Style for the image */
     width: 80px; /* Adjust the size as needed */
     height: 80px; /* Adjust the size as needed */
     border-radius: 50%;
-    margin-left: 20px; /* Adjust margin for spacing */
+    margin-left: 100px; /* Adjust margin for spacing */
 }
 
 header .nav-links {
