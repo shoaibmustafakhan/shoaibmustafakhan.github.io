@@ -1298,41 +1298,36 @@
     }
     
     @media (max-width: 600px) {
-      .about--banner {
-        height: auto;
+        .about--banner {
+          height: auto;
+          padding: 20px 0; /* Add some padding to adjust the spacing */
+        }
+      
+        .about--banner::before,
+        .about--banner::after {
+          left: auto; /* Remove fixed positioning */
+        }
+      
+        .about--banner h2 {
+          margin-top: 20px; /* Adjust the margin-top for better alignment */
+          font-size: 24px; /* Decrease the font size for smaller screens */
+        }
+      
+        .about--banner h2::before,
+        .about--banner h2::after {
+          display: none; /* Hide these elements to avoid overlapping */
+        }
+      
+        .about--banner img {
+          display: none; /* Hide the image to free up space */
+        }
+      
+        .about--options {
+          display: block; /* Ensure the options are visible */
+          text-align: center; /* Center the text */
+        }
       }
-    
-      .about--banner::before {
-        left: 155px;
-      }
-    
-      .about--banner::after {
-        left: 310px;
-      }
-    
-      .about--banner h2 {
-        margin-top: 0;
-        font-size: 55px;
-      }
-    
-      .about--banner h2::before {
-        top: 43px;
-        left: 214px;
-      }
-    
-      .about--banner h2::after {
-        top: 205px;
-        left: 205px;
-      }
-    
-      .about--banner img {
-        display: none;
-      }
-    
-      .about--options {
-        display: none;
-      }
-    }
+      
     
     .contact {
       position: fixed;
