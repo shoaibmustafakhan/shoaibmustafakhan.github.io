@@ -8,75 +8,49 @@ body {
     overflow-x: hidden;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
 header {
     background: linear-gradient(to right, #0066cc, #0099cc);
     color: #fff;
-    padding: 60px 0;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-header::before {
-    content: "";
-    position: absolute;
-    top: -20px;
-    left: 0;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
     width: 100%;
-    height: 120%;
-    background: url('https://jopecuro.com/static/media/background.f3c7a5c2.jpg') center center/cover;
-    opacity: 0.2;
-    z-index: 1;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-header .header-content {
-    position: relative;
-    z-index: 2;
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header .header-content h1 {
-    font-size: 48px;
     margin: 0;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-header .header-content p {
-    font-size: 20px;
+header .nav-links {
+    display: flex;
+    gap: 20px;
 }
 
-header .header-content a {
-    color: #77d5d4;
-    text-decoration: none;
-}
-
-header .social-links {
-    margin-top: 20px;
-}
-
-header .social-links a {
+header .nav-links a {
     color: #fff;
-    margin: 0 10px;
     text-decoration: none;
     font-size: 18px;
-    display: inline-block;
     transition: color 0.3s ease;
 }
 
-header .social-links a:hover {
+header .nav-links a:hover {
     color: #77d5d4;
 }
 
-header .social-links i {
-    margin-right: 5px;
-}
-
-main {
-    padding: 20px 0;
+.container {
+    width: 80%;
+    margin: auto;
+    padding-top: 120px; /* Adjust for fixed header */
 }
 
 h2 {
@@ -91,14 +65,14 @@ h2 {
     padding: 20px;
     margin: 20px 0;
     border-left: #77d5d4 5px solid;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .job:hover, .education:hover, .project:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 ul.skills {
@@ -164,10 +138,10 @@ footer {
     }
 
     header .header-content h1 {
-        font-size: 32px;
+        font-size: 20px;
     }
 
-    header .header-content p {
+    header .nav-links a {
         font-size: 16px;
     }
 
