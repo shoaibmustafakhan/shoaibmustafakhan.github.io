@@ -1310,8 +1310,9 @@
       
         .about--banner h2 {
 
-          margin-top: -20px; /* Adjust the margin-top for better alignment */
+          margin-top: -200px; /* Adjust the margin-top for better alignment */
           font-size: 24px; /* Decrease the font size for smaller screens */
+          text-align: center;
         }
       
         .about--banner h2::before,
@@ -1324,7 +1325,7 @@
         }
       
         .about--options {
-          display: block; /* Ensure the options are visible */
+          display: none; /* Ensure the options are visible */
           text-align: center; /* Center the text */
         }
       }
